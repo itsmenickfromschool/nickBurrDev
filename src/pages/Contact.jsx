@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 function Contact() {
   return (
     <div className="bg-dark">
-      <Navbar />
       <div className="w-full h-screen text-4xl flex items-center justify-center text-blue-500">
         <div className="form-control w-full max-w-xs">
           <label className="label">
@@ -21,9 +20,7 @@ function Contact() {
             <span className="label-text-alt">Bottom Right label</span>
           </label>
         </div>
-        
       </div>
-      < Footer />
     </div>
   );
 }

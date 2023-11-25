@@ -6,6 +6,7 @@ import About from './pages/About.jsx';
 import App from './App.jsx'
 import Skills from './pages/Skills.jsx';
 import './index.css'
+import Projects from './pages/Projects.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/skills',
         element: <Skills />,
+      },
+      {
+        path: '/projects',
+        element: <Projects />,
       },
     ],
   },
