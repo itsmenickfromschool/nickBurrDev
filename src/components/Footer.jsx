@@ -16,9 +16,9 @@ function Footer() {
     </nav> 
     <nav>
       <div className="grid grid-flow-col gap-4">
-        <a><VscGithub size="40px" /></a>
-        <a><PiLinkedinLogoBold size="40px" /></a>
-        <a><SiSpotify size="40px" /></a>
+        <a href="https://github.com/itsmenickfromschool"><VscGithub size="40px" /></a>
+        <a href="https://www.linkedin.com/in/nicholas-burr-48a316252/"><PiLinkedinLogoBold size="40px" /></a>
+        <a href="https://open.spotify.com/user/129303136?si=85f6e7bbacad4d5c"><SiSpotify size="40px" /></a>
       </div>
     </nav> 
     <aside>
