@@ -31,15 +31,7 @@ function Navbar() {
               <Link to="/about">About Me</Link>
             </li>
             <li>
-              <a>Projects</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a href="/projects">Projects</a>
             </li>
             <li>
               <Link to="/skills">Skills</Link>
@@ -50,25 +42,15 @@ function Navbar() {
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link to="/about">About Me</Link>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Projects</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <Link to="/skills">Skills</Link>
-          </li>
+        <li>
+              <Link to="/about">About Me</Link>
+            </li>
+            <li>
+              <a href="/projects">Projects</a>
+            </li>
+            <li>
+              <Link to="/skills">Skills</Link>
+            </li>
         </ul>
       </div>
       <div className="hidden navbar-end md:flex">
