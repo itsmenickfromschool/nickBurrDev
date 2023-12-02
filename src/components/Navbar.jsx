@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const logo = `<NickBurrDevelops />`;
+const logo = `<NickBurrDev />`;
 function Navbar() {
   return (
     <div className="navbar top-0 bg-gray-900">

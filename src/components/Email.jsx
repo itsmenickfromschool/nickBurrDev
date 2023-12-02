@@ -37,6 +37,10 @@ export const Email = () => {
       onSubmit={sendEmail}
       className="w-full bg-slate-800 p-6 rounded-lg space-y-4"
     >
+      <div className="flex flex-col justify-start">
+        <h1 className="text-2xl text-slate-600 font-bold">Get in Touch:</h1>
+
+      </div>
       <div className="flex flex-col">
         <label className="text-white text-sm font-bold mb-2">Name</label>
         <input

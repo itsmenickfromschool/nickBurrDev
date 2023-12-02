@@ -10,10 +10,10 @@ function About() {
       <div className="w-full md:w-1/2  bg-gray-800 p-6 rounded-lg shadow-lg">
         <h1 className="text-4xl text-blue-600 mb-4">Hi, I'm Nicholas!</h1>
         <p className="text-lg font-mono mb-3">
-          I am a full-stack web developer based in Kazakhstan, specializing in JavaScript-focused technologies.
+          I am a full-stack web developer based in Utah, specializing in JavaScript-focused technologies.
         </p>
         <p className="text-lg font-mono mb-3">
-          With a passion for coding and problem-solving, I am ready to bring your web projects to life. Check out my <Link className ="text-blue-500"to="/skills">Skills</Link> and <Link className ="text-blue-500"to="/projects">Projects</Link>. I can even center a Div!
+          With a passion for problem solving and programming, I am ready to bring your ideas to life. Check out my <Link className ="text-blue-500"to="/skills">Skills</Link> and <Link className ="text-blue-500"to="/projects">Projects</Link>. I can even center a Div!
         </p>
         <div className="flex justify-center">
           <img src={rainbowImage} className="rounded-md mt-3 max-w-full h-auto" alt="Nicholas Burr with a cheeseburger" />

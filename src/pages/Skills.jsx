@@ -11,6 +11,9 @@ import { SiExpress } from "react-icons/si";
 import { FaPhoneSquare, FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { Email } from "../components/Email";
 import { CgScrollV } from "react-icons/cg";
+import resume from '/src/assets/pdf/resume.pdf'
+import { Link } from "react-router-dom";
+
 
 function Skills() {
   const skills = [
@@ -80,9 +83,9 @@ function Skills() {
       </div>
 
       <div className="flex-1 flex flex-col items-center mt-6 md:mt-0">
-        <button className="btn m-5  w-full"> Resume</button>
+      <Link to={resume}><button className="btn m-5  w-full">Resume</button></Link>
         <Email className="w-full" />{" "}
-        {/* Adjust Email component styling as needed */}
+        
       </div>
     </div>
   );
