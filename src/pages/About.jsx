@@ -6,16 +6,15 @@ function About() {
     <div className="bg-dark text-white">
     
     <div className='w-full h-screen flex flex-col items-start justify-center p-5'>
-      <h1 className='text-4xl text-blue-500'>Hi,</h1>
-      <div className="text-lg font-mono bg-gray-800 p-4 rounded-lg">
-        <p><span className="text-green-400">let</span> nick = <span className="text-yellow-300">"Your Name Here"</span>;</p>
-        <p><span className="text-green-400">function</span> About() &#123;</p>
-        <p className="ml-4">return (</p>
-        <p className="ml-8">&#60;<span className="text-purple-500">div</span> className="bg-dark"&#62;</p>
-        <p className="ml-12">... <span className="text-red-500">// Your content goes here</span></p>
-        <p className="ml-8">&#60;/<span className="text-purple-500">div</span>&#62;</p>
-        <p className="ml-4">);</p>
-        <p>&#125;</p>
+      <h1 className='text-4xl text-blue-600'>Hi:</h1>
+      <div className="text-lg m-2 font-mono  bg-gray-800 p-4 rounded-lg flex-row">
+        <p className=''> My name is Nicholas Burr, I am a fullstack web developer, currently operating in Kazakhstan.</p>
+        <br />
+        <p className=''>I work in a heavily javascript-focused stack.</p>
+        <br />
+        <p className=''>Let me work for you!</p>
+        <img src={require('src/assets/images/inout.png')} className="rounded-md" alt="Nicholas with a cheeseburger" />
+        
       </div>
     </div>
     

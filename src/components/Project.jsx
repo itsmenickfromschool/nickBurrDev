@@ -1,26 +1,25 @@
 import React from "react";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { VscGithub } from "react-icons/vsc";
-
+import { Link } from "react-router-dom"
 function Project({ project }) {
   return (
-    <div className="card bg-gray-700 shadow-xl">
+    <div className="card bg-gray-700 shadow-xl h-96 w-full">
       <figure>
-        <img src={project.img} />
+        <img className="image-full"src={project.img} />
       </figure>
-      <div className="card-body bg-gray-800">
+      <div className="card-body bg-gray-800 rounded-md">
         <h2 className="card-title">{project.title}</h2>
-        <p>{project.subTitle}</p>
+        <p className="text-slate-200 text-xs">{project.subTitle}</p>
         <div className="card-actions justify-end">
-          <a href={`${project.link}`}>
+          <Link to={`${project.link}`}>
             <button className="btn btn-primary">Go to!</button>
-          </a>
-          <a href={`${project.github}`}>
+          </Link>
+          <Link to={`${project.github}`}>
             <button>
-              <TbBrandGithubFilled />
               <VscGithub size="20px"/>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
