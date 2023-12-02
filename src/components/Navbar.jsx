@@ -36,24 +36,29 @@ function Navbar() {
             <li>
               <Link to="/skills">Skills</Link>
             </li>
+            <li>
+              <Link to="/contact" className="btn flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                Hire me!
+              </Link>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">{logo}</a>
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
-        <li>
-              <Link to="/about">About Me</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/skills">Skills</Link>
-            </li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/skills">Skills</Link>
+          </li>
         </ul>
       </div>
-      <div className="hidden navbar-end md:flex">
+      <div className=" navbar-end hidden md:flex">
         <Link to="/contact" className="btn">
           Hire me!
         </Link>

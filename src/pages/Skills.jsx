@@ -8,7 +8,10 @@ import { GrMysql } from "react-icons/gr";
 import { GrGraphQl } from "react-icons/gr";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
-import { FaPhoneSquare } from "react-icons/fa";
+import { FaPhoneSquare, FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { Email } from "../components/Email";
+import { CgScrollV } from "react-icons/cg";
+
 function Skills() {
   const skills = [
     {
@@ -46,19 +49,40 @@ function Skills() {
   ];
 
   return (
-    <div className="">
-      <div className="w-full h-screen text-4xl  flex items-center justify-center text-blue-500">
-        <div className="carousel bg-slate-400 carousel-vertical rounded-box h-96">
-        {skills.map((item) => (
-          <div className="carousel-item items-center justify-center" key={item.skill}>
-            <div className="m-20 flex flex-col justify-center items-center h-full">
-              <h2 className="mb-2">{item.skill}</h2>
-              <item.Icon />
-            </div>
-          </div>
-        ))}{" "}
-
+    <div className="flex flex-col md:flex-row p-4 bg-slate-600">
+      <div className="flex-1 m-5 flex flex-col items-center">
+        <div className="flex flex-row items-center ">
+          <h2 className="text-2xl font-bold text-slate-800 mb-0">
+            {" "}
+            Scroll through my Skills{" "}
+          </h2>
+          <CgScrollV className="text-4xl ml-1 text-slate-800" />
         </div>
+
+        <div className="w-full m-5 carousel carousel-vertical h-96 bg-slate-800 rounded-box  shadow-lg p-4 mb-4">
+          {skills.map((item) => (
+            <div
+              className="carousel-item flex flex-col items-center justify-center py-3 px-2"
+              key={item.skill}
+            >
+              <item.Icon className="text-6xl mb-2 text-blue-500" />
+              <span className="text-xl text-white">{item.skill}</span>
+            </div>
+          ))}
+        </div>
+        <div className="bg-slate-700 text-white p-3 rounded-lg shadow-lg mb-4">
+          <p className="text-lg">
+            I am a passionate full-stack developer with expertise in modern web
+            technologies. My skills encompass both frontend and backend
+            development, creating efficient and scalable solutions.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex-1 flex flex-col items-center mt-6 md:mt-0">
+        <button className="btn m-5  w-full"> Resume</button>
+        <Email className="w-full" />{" "}
+        {/* Adjust Email component styling as needed */}
       </div>
     </div>
   );

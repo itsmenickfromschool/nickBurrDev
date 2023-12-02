@@ -35,7 +35,7 @@ export const Email = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="bg-gray-800 p-6 rounded-lg space-y-4"
+      className="w-full bg-slate-800 p-6 rounded-lg space-y-4"
     >
       <div className="flex flex-col">
         <label className="text-white text-sm font-bold mb-2">Name</label>
@@ -54,7 +54,7 @@ export const Email = () => {
           placeholder="Your Email"
           type="email"
           name="email"
-          className="px-3 py-2 rounded shadow-sm border border-gray-600 text-gray-300 bg-gray-700 focus:ring-blue-500 focus:border-blue-500"
+          className="px-3 py-2 rounded shadow-sm border border-slate-600 text-slate-300 bg-slate-700 focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
 
@@ -64,7 +64,7 @@ export const Email = () => {
           type="text"
           placeholder="Subject"
           name="subject"
-          className="px-3 py-2 rounded shadow-sm border border-gray-600 text-gray-300 bg-gray-700 focus:ring-blue-500 focus:border-blue-500"
+          className="px-3 py-2 rounded shadow-sm border border-slate-600 text-slate-300 bg-slate-700 focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
 
@@ -73,7 +73,7 @@ export const Email = () => {
         <textarea
           name="message"
           placeholder="Leave a comment..."
-          className="px-3 py-2 rounded shadow-sm border border-gray-600 text-gray-300 bg-gray-700 focus:ring-blue-500 focus:border-blue-500"
+          className="px-3 py-2 rounded shadow-sm border border-slate-600 text-slate-300 bg-slate-700 focus:ring-blue-500 focus:border-blue-500"
           rows="4"
         />
       </div>

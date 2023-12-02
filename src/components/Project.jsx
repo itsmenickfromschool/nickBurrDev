@@ -1,5 +1,4 @@
 import React from "react";
-import { TbBrandGithubFilled } from "react-icons/tb";
 import { VscGithub } from "react-icons/vsc";
 import { Link } from "react-router-dom"
 function Project({ project }) {
