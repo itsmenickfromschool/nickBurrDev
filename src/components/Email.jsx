@@ -9,9 +9,10 @@ export const Email = () => {
     e.preventDefault();
     if (
       !emailRef.current.value.match(
-        /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
       )
     ) {
+      alert("Email not Valid, please try again!")
       return;
     }
     emailjs
@@ -23,6 +24,7 @@ export const Email = () => {
       )
       .then(
         (result) => {
+          alert("Email Sent!")
           console.log(result.text);
         },
         (error) => {
